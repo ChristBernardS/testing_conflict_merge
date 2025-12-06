@@ -10,5 +10,5 @@ response: ChatResponse = chat(
         },
     ],
 )
-print(response["message"]["content"])
+print(response["message"]["content"][0])
 print(response.message.content)
