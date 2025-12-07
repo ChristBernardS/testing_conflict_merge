@@ -1,14 +1,15 @@
 from ollama import chat
 from ollama import ChatResponse
 
-response: ChatResponse = chat(
+generate: ChatResponse = chat(
     model="Llama3",
     messages=[
         {
             "role": "user",
-            "content": "Why is the sky blue?",
+            "content": "Why is the sea taste salty?",
         },
     ],
 )
-print(response["message"]["content"])
-print(response.message.content)
+print(generate["message"]["content"])
+print(generate.message.content)
+
